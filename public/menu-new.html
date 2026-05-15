@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html lang="id" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Bricolage+Grotesque:wght@500&amp;family=Patrick+Hand&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>.font-patrick {
+    font-family: "Patrick Hand", cursive
+    }
+.chalkboard-texture {
+    background-color: #2c2c2c;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px
+    }
+.taplak-pattern {
+    background-image: repeating-conic-gradient(#dcc1bb 0% 25%, transparent 0% 50%);
+    background-position: 0 0, 8px 8px;
+    background-size: 16px 16px;
+    opacity: 0.1
+    }
+.wood-grain {
+    background-color: #f1ede8;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuCdReRDy4bykbl86tmpf3GXlPOWFYMC8tVCZ0rbe-y-LatQQguBqz9YElHqJ6m3H5DK265QRZMRBkZ84ijoFpICV2D_-NrlofaQTybA7UxOaghwwAzoJGuK-as4hNAtNYGYaCLe5Jqs40sg-zECYUhpwMVRvwDhKmcBLs1VmHOERhBy4TTMHUMehEaQIgznT3jWL4BzImc6hDeqCN_AcMCMUSCRJUhjHQPwVT1Aa2InkGM8bspwFLEraUxQnte9wFhOjLd4mNUNISE)
+    }
+.inner-shadow-carved {
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -1px -1px 2px rgba(255, 255, 255, 0.5)
+    }</style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-low": "#f7f3ee",
+                    "on-primary": "#ffffff",
+                    "surface-tint": "#9b432f",
+                    "on-secondary-container": "#796048",
+                    "tertiary-fixed": "#ffdcbd",
+                    "tertiary-container": "#815a30",
+                    "on-surface": "#1c1c19",
+                    "surface-container": "#f1ede8",
+                    "surface-bright": "#fdf9f4",
+                    "inverse-surface": "#31302d",
+                    "outline-variant": "#dcc1bb",
+                    "surface-dim": "#ddd9d5",
+                    "on-tertiary-fixed-variant": "#623f18",
+                    "secondary": "#725a42",
+                    "on-tertiary": "#ffffff",
+                    "on-surface-variant": "#55423e",
+                    "primary-fixed-dim": "#ffb4a3",
+                    "on-primary-fixed-variant": "#7c2d1a",
+                    "on-tertiary-fixed": "#2c1600",
+                    "secondary-fixed-dim": "#e1c1a4",
+                    "on-secondary-fixed": "#291806",
+                    "secondary-fixed": "#fedcbe",
+                    "surface-variant": "#e6e2dd",
+                    "background": "#fdf9f4",
+                    "tertiary": "#66421b",
+                    "inverse-on-surface": "#f4f0eb",
+                    "on-secondary-fixed-variant": "#59422c",
+                    "primary-container": "#a04732",
+                    "on-error": "#ffffff",
+                    "surface": "#fdf9f4",
+                    "primary-fixed": "#ffdad2",
+                    "on-primary-fixed": "#3d0600",
+                    "on-background": "#1c1c19",
+                    "surface-container-high": "#ebe8e3",
+                    "error-container": "#ffdad6",
+                    "primary": "#81301d",
+                    "outline": "#89726d",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#ffb4a3",
+                    "on-tertiary-container": "#ffd7b3",
+                    "surface-container-highest": "#e6e2dd",
+                    "secondary-container": "#fedcbe",
+                    "on-primary-container": "#ffd5cc",
+                    "tertiary-fixed-dim": "#f0bd8b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "margin-mobile": "16px",
+                    "gutter": "16px",
+                    "margin-desktop": "40px",
+                    "max-width": "1200px"
+            },
+            "fontFamily": {
+                    "display": ["Montserrat"],
+                    "body-lg": ["Montserrat"],
+                    "headline-lg-mobile": ["Montserrat"],
+                    "label-chalk": ["Bricolage Grotesque"],
+                    "body-md": ["Montserrat"],
+                    "headline-md": ["Montserrat"],
+                    "headline-lg": ["Montserrat"],
+                    "label-sm": ["Montserrat"]
+            },
+            "fontSize": {
+                    "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                    "label-chalk": ["18px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style data-stitch-cursor="">*{cursor:crosshair!important}[contenteditable="true"]:focus,.cursor-text:focus{cursor:text!important}</style><style data-stitch-scroll-lock="">html,body{overflow:hidden!important}</style><style data-stitch-cursor=""></style><style data-stitch-scroll-lock=""></style></head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="bg-surface-bright border-b border-outline-variant z-50 sticky top-0">
+<nav class="flex justify-between items-center px-margin-desktop py-4 w-full max-w-max-width mx-auto">
+<div class="font-label-chalk text-headline-md text-primary">GameBrew Corner</div>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="font-label-chalk text-label-chalk text-primary font-bold border-b-2 border-primary pb-1 transition-colors" href="#">Menu</a>
+<a class="font-label-chalk text-label-chalk text-on-surface-variant hover:text-primary transition-colors" href="#">Bundles</a>
+<a class="font-label-chalk text-label-chalk text-on-surface-variant hover:text-primary transition-colors" href="#">Gaming Hub</a>
+<a class="font-label-chalk text-label-chalk text-on-surface-variant hover:text-primary transition-colors" href="#">Location</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-chalk text-label-chalk scale-95 active:scale-90 transition-transform border-b-4 border-primary-container">
+                Pesan Sekarang
+            </button>
+</nav>
+</header>
+<main class="flex-grow w-full max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-margin-desktop">
+<!-- Hero Section / Title -->
+<div class="text-center mb-12 relative">
+<div class="absolute inset-0 taplak-pattern -z-10 h-1/2 mt-auto"></div>
+<h1 class="font-display text-display text-primary mb-2">Warung Menu</h1>
+<p class="font-label-chalk text-label-chalk text-on-surface-variant max-w-2xl mx-auto">
+                Kelezatan merakyat, kenyamanan maksimal. Pilihan menu favorit untuk teman ngopi dan mabar Anda.
+            </p>
+</div>
+<!-- Menu Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
+<!-- Category: Kopi & Minuman -->
+<section class="relative group">
+<div class="absolute -top-4 -left-4 bg-tertiary text-on-tertiary px-6 py-2 rotate-[-2deg] z-10 shadow-lg font-label-chalk border-b-4 border-tertiary-container">
+                    Kopi &amp; Minuman
+                </div>
+<!-- Chalkboard Card -->
+<div class="chalkboard-texture rounded-xl p-8 pt-12 shadow-2xl border-8 border-secondary-container transform group-hover:scale-[1.02] transition-transform duration-300" style="min-height: 400px; display: flex; flex-direction: column; justify-content: space-between;">
+<ul class="space-y-6 font-patrick text-2xl text-surface-bright tracking-wide">
+<li class="flex justify-between items-end border-b border-white/20 border-dashed pb-2">
+<span class="">Kopi Hitam</span>
+<span class="text-tertiary-fixed">Rp 5rb</span>
+</li>
+<li class="flex justify-between items-end border-b border-white/20 border-dashed pb-2">
+<span class="">Es Teh</span>
+<span class="text-tertiary-fixed">Rp 5rb</span>
+</li>
+<li class="flex justify-between items-end border-b border-white/20 border-dashed pb-2">
+<span class="">Kopi Susu</span>
+<span class="text-tertiary-fixed">Rp 7rb</span>
+</li>
+</ul>
+<div class="mt-8 flex justify-center">
+<span class="material-symbols-outlined text-surface-variant text-4xl opacity-50">coffee</span>
+</div>
+</div>
+</section>
+<!-- Category: Camilan -->
+<section class="relative group">
+<div class="absolute -top-4 -right-4 bg-primary text-on-primary px-6 py-2 rotate-[2deg] z-10 shadow-lg font-label-chalk border-b-4 border-primary-container">
+                    Camilan
+                </div>
+<!-- Laminated Paper Style Card -->
+<div class="bg-surface-container-low wood-grain rounded-xl p-8 pt-12 shadow-xl border-2 border-outline-variant transform group-hover:scale-[1.02] transition-transform duration-300 overflow-hidden relative" style="min-height: 400px; display: flex; flex-direction: column; justify-content: space-between;">
+<div class="absolute inset-0 taplak-pattern opacity-5 pointer-events-none"></div>
+<ul class="space-y-6 font-patrick text-2xl text-on-surface-variant tracking-wide">
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" data-weight="fill">bakery_dining</span>
+<span class="">Gorengan Hangat</span>
+<span class="ml-auto text-primary font-bold">Panas!</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" data-weight="fill">ramen_dining</span>
+<span class="">Indomie Telur</span>
+<span class="ml-auto text-primary font-bold">Populer</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" data-weight="fill">restaurant</span>
+<span class="">Pisang Goreng</span>
+<span class="ml-auto text-primary font-bold">Manis</span>
+</li>
+</ul>
+<!-- Card Footer Decoration -->
+<div class="mt-12 border-t border-outline-variant pt-4 flex justify-between items-center opacity-70">
+<span class="text-sm font-label-chalk">DIOLAH DENGAN KASIH</span>
+<div class="flex gap-1">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<div class="w-2 h-2 rounded-full bg-tertiary"></div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Featured Section: Promo/Bundle -->
+<section class="mt-20">
+<div class="bg-surface-container-highest border-2 border-dashed border-outline-variant rounded-xl p-8 md:p-12 flex flex-col md:flex-row gap-gutter md:items-stretch">
+<div class="flex-1">
+<h2 class="font-headline-lg text-primary mb-4">Paket Mabar Rakyat</h2>
+<p class="font-body-lg text-on-surface-variant mb-6">Nikmati Kopi Susu + Indomie Telur + Sesi Gaming 2 Jam hanya seharga Rp 25rb. Kebersamaan tanpa batas, harga bersahabat.</p>
+<button class="bg-secondary text-on-secondary px-8 py-3 rounded-full font-label-chalk text-label-chalk shadow-lg hover:brightness-110 transition-all border-b-4 border-on-secondary-fixed-variant">
+                        Ambil Paket Ini
+                    </button>
+</div>
+<div class="w-full md:w-1/2 aspect-video bg-surface-dim rounded-lg overflow-hidden border-4 border-surface-container shadow-inner">
+<img alt="Interior Warkop Rakyat yang hangat" class="w-full h-full object-cover opacity-90 mix-blend-multiply" data-alt="A cozy, authentic Indonesian coffee shop interior with warm, earthy tones and rustic wooden furniture. The atmosphere is inviting with soft, amber ambient lighting illuminating the steam from coffee mugs on local wooden tables. In the background, there is a hint of a gaming setup with portable consoles, blending traditional warkop aesthetics with modern entertainment. The scene is calm and communal, reflecting a merakyat spirit." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpvNh3Q_kUHz3hikrKzOr1z6qX4sFxkp_tw6YuJP5EianiQ5vPYCy5COZKkScEkhi9LsQ6e92l0kRNPzg1Lk7kxWgb0-HeSUQ10e_qNqGKGcHuvwkvJKgQD4JJfd32X54venru7qpdUFOcrSThBGGtPTJMuZ6yzH70Cd33iJECbBa8Ail_x8jsGcuhZG5VnCI2K4wbS5WuW3s85FhTJquGiM1P0BZnX8CzeMpbX6nCd4TYzkB8G52bBK2w914SoQEHzM5GBCmUN1Y"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest border-t-2 border-dashed border-outline-variant mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center gap-gutter px-margin-desktop py-margin-desktop w-full max-w-max-width mx-auto"><div class="flex flex-col md:flex-row justify-between items-center gap-gutter px-margin-desktop py-8 w-full max-w-max-width mx-auto"><div class="font-label-chalk text-headline-md text-on-surface">GameBrew Corner</div><p class="font-body-md text-on-surface text-center md:text-left">© 2024 GameBrew Corner - Kopi, Game, &amp; Kebersamaan</p><div class="flex flex-col md:flex-row gap-4 items-center"><a class="font-body-md text-on-surface-variant hover:text-primary underline transition-opacity" href="#">Hubungi via WhatsApp</a><a class="font-body-md text-on-surface-variant hover:text-primary underline transition-opacity" href="#">Alamat Kami</a><a class="font-body-md text-on-surface-variant hover:text-primary underline transition-opacity" href="#">Kebijakan Privasi</a></div></div></div>
+</footer>
+<!-- FAB for Quick Order (Contextual for Home/Menu) -->
+<div class="fixed bottom-margin-mobile right-margin-mobile md:bottom-margin-desktop md:right-margin-desktop flex flex-col items-center gap-2 group">
+<div class="bg-primary-container text-on-primary-container p-4 rounded-full shadow-2xl scale-100 hover:scale-110 active:scale-95 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-3xl" data-weight="fill">shopping_basket</span>
+</div>
+<span class="bg-surface-bright border border-outline-variant px-3 py-1 rounded text-label-sm font-label-chalk opacity-0 group-hover:opacity-100 transition-opacity">Checkout</span>
+</div>
+</body></html>

@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // No config needed for CDN links in layout
 };
 
 export default nextConfig;
