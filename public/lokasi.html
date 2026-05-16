@@ -1,0 +1,223 @@
+<!DOCTYPE html><html class="h-full" lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Bricolage+Grotesque:wght@500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+          tailwind.config = {
+            darkMode: "class",
+            theme: {
+              extend: {
+                "colors": {
+                        "tertiary-container": "#815a30",
+                        "on-tertiary-fixed-variant": "#623f18",
+                        "on-surface": "#1c1c19",
+                        "inverse-primary": "#ffb4a3",
+                        "tertiary-fixed-dim": "#f0bd8b",
+                        "surface": "#fdf9f4",
+                        "background": "#fdf9f4",
+                        "primary-fixed-dim": "#ffb4a3",
+                        "on-tertiary-container": "#ffd7b3",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#ddd9d5",
+                        "on-primary-fixed-variant": "#7c2d1a",
+                        "surface-tint": "#9b432f",
+                        "primary-fixed": "#ffdad2",
+                        "surface-container": "#f1ede8",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed": "#291806",
+                        "outline": "#89726d",
+                        "surface-variant": "#e6e2dd",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#55423e",
+                        "surface-container-highest": "#e6e2dd",
+                        "secondary": "#725a42",
+                        "on-background": "#1c1c19",
+                        "surface-bright": "#fdf9f4",
+                        "secondary-fixed-dim": "#e1c1a4",
+                        "tertiary-fixed": "#ffdcbd",
+                        "primary": "#81301d",
+                        "on-error-container": "#93000a",
+                        "surface-container-low": "#f7f3ee",
+                        "on-primary-fixed": "#3d0600",
+                        "tertiary": "#66421b",
+                        "outline-variant": "#dcc1bb",
+                        "on-primary-container": "#ffd5cc",
+                        "secondary-container": "#fedcbe",
+                        "on-tertiary-fixed": "#2c1600",
+                        "surface-container-high": "#ebe8e3",
+                        "inverse-on-surface": "#f4f0eb",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "primary-container": "#a04732",
+                        "inverse-surface": "#31302d",
+                        "on-secondary-container": "#796048",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#59422c",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed": "#fedcbe"
+                },
+                "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                },
+                "spacing": {
+                        "gutter": "16px",
+                        "margin-desktop": "40px",
+                        "margin-mobile": "16px",
+                        "unit": "8px",
+                        "max-width": "1200px"
+                },
+                "fontFamily": {
+                        "label-chalk": ["Bricolage Grotesque"],
+                        "headline-lg": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "label-sm": ["Montserrat"],
+                        "headline-lg-mobile": ["Montserrat"],
+                        "body-lg": ["Montserrat"],
+                        "display": ["Montserrat"],
+                        "body-md": ["Montserrat"]
+                },
+                "fontSize": {
+                        "label-chalk": ["18px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                }
+              },
+            },
+          }
+    </script>
+<style>
+        .taplak-divider {
+            background-image: radial-gradient(var(--tw-colors-outline-variant) 1px, transparent 1px);
+            background-size: 8px 8px;
+            height: 4px;
+            opacity: 0.3
+        }
+        .wood-grain-texture {
+            background-color: #fdf9f4;
+            background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBqxyYlnylmJhCcYS9Wi9nEEnFW6Y0WTZcTMwn6J1z1QsvPxx1HnplKx5si_SolVIMKHb9poHt9mTCBUXU5CXgLJBMiSnocsBesFHEpkPE-BGTZOnuB4CCzbaMC_9WCV2VP-0RA3oy7V_sQMhfekdp4PcOy-OBgQntlNOoish1zHzoo06utEWEEztC_YCfi7K8xDFnsg4bwbvN4IdkqL-l-G7nJ_31oAL8XHq8RpWa-SB4eAuqsEVpnvbK_FpyRHO7zY8gL-EPjaPw)
+        }
+        .inner-shadow-carved {
+            box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.05)
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden min-h-full flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface-bright border-b border-outline-variant sticky top-0 z-50 w-full shrink-0">
+<div class="flex justify-between items-center px-margin-desktop py-4 w-full max-w-max-width mx-auto">
+<a class="font-label-chalk text-headline-md text-primary" href="{{DATA:SCREEN:SCREEN_41}}">Warkop Rakyat</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-chalk text-label-chalk text-on-surface-variant hover:text-primary transition-colors" href="{{DATA:SCREEN:SCREEN_34}}">Menu</a>
+<a class="font-label-chalk text-label-chalk text-on-surface-variant hover:text-primary transition-colors" href="{{DATA:SCREEN:SCREEN_37}}">Bundles</a>
+<a class="font-label-chalk text-label-chalk text-on-surface-variant hover:text-primary transition-colors" href="{{DATA:SCREEN:SCREEN_9}}">Gaming Hub</a>
+<a class="font-label-chalk text-label-chalk text-primary font-bold border-b-2 border-primary pb-1" href="{{DATA:SCREEN:SCREEN_28}}">Location</a>
+</div>
+<a href="{{DATA:SCREEN:SCREEN_28}}" class="bg-primary text-on-primary px-6 py-2 font-label-chalk text-label-chalk scale-95 active:scale-90 transition-transform shadow-sm hover:shadow-md inline-block">Pesan Sekarang</a>
+</div>
+</nav>
+<main class="flex-grow w-full max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-12">
+<!-- Hero Section -->
+<header class="mb-12">
+<h1 class="font-display text-display text-primary mb-2">Temukan Kami</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                Tempat ternyaman untuk kopi tubruk, mabar tanpa lag, dan obrolan santai bareng kawan.
+            </p>
+</header>
+<!-- Main Layout: Bento Style -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Map Card -->
+<div class="md:col-span-8 bg-surface-container border border-outline-variant p-2 overflow-hidden relative min-h-[400px]">
+<div class="absolute inset-0 z-0 bg-surface-dim">
+<img alt="Map" class="w-full h-full object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-JE6xx6e794nbfI-sbl349WSOSBdcbxjpUWtuxa7ZlHRejTyfMOmaCQ01oEEu-jzIVjwG-Leg2IO7V8zIa_wj1q_GGBqEB4fcWGqL2vzKR8JChtG_rUY0OeZidt-o4BxgZA3nyFjOzxltxJCHyxwll1f8eBCJhxNZJQXVLy_qADQd-puge-1kCmPhtgAhPdcx3R_EQyj4Ynhv1p4moxtDk2wZSiDTjLbpf8LURjohE-JTF_jOv5OiEoJGxHagWNuVHWfH7AOrXvQ">
+</div>
+<!-- Pin Overlay -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center">
+<div class="bg-primary text-on-primary p-3 rounded-full shadow-lg border-2 border-surface flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div class="mt-2 bg-surface px-4 py-2 border border-outline-variant shadow-sm font-label-chalk">
+                        GameBrew Corner
+                    </div>
+</div>
+</div>
+<!-- Operating Hours & Contact -->
+<div class="md:col-span-4 flex flex-col gap-gutter">
+<!-- Hours Card -->
+<div class="border border-outline-variant p-8 flex flex-col justify-center bg-white h-full">
+<div class="flex items-center gap-3 mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">schedule</span>
+<h2 class="font-headline-md text-headline-md text-primary">Jam Buka</h2>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-center border-b border-dashed border-outline-variant pb-3">
+<span class="font-label-chalk text-on-surface">Setiap Hari</span>
+<span class="font-label-chalk text-primary font-bold text-xl">10:00 - 22:00</span>
+</div>
+<p class="text-on-surface-variant font-body-md italic text-sm leading-relaxed">*Jam operasional dapat berubah saat hari libur nasional atau turnamen khusus.</p>
+</div>
+</div>
+<!-- Contact/Address Card -->
+<div class="bg-surface-container-highest border border-outline-variant p-8 flex flex-col h-full">
+<div class="flex items-center gap-3 mb-4 text-primary">
+<span class="material-symbols-outlined">pin_drop</span>
+<h2 class="font-headline-md text-headline-md">Alamat</h2>
+</div>
+<p class="font-body-md text-body-md mb-8 flex-grow">
+                        Jl. Kenangan Indah No. 42,<br>
+                        Kecamatan Kebersamaan, Jakarta Selatan<br>
+                        DKI Jakarta, 12345
+                    </p>
+<a class="w-full bg-tertiary text-on-tertiary py-4 flex items-center justify-center gap-2 font-label-chalk text-label-chalk hover:opacity-90 transition-opacity border-b-2 border-tertiary-container active:border-b-0 active:translate-y-[2px]" href="https://wa.me/628123456789">
+<span class="material-symbols-outlined">chat</span>
+                        Hubungi via WhatsApp
+                    </a>
+</div>
+</div>
+<!-- Interior Gallery Section -->
+<div class="md:col-span-12 mt-8">
+<div class="taplak-divider mb-12"></div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface-variant mb-8 text-center">Suasana Kami</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Photo 1 -->
+<div class="aspect-square bg-surface-container border border-outline-variant p-1">
+<img alt="Interior 1" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6RL6MIFp5dfzLS-fQS5Z9at4guRgp2vc0UsjpfSCCZL4DhKxvYzblZ6nyllfN91RuSyawlh8-Nve7sKZuBjQZW81dXQAOcxBgA0LlpK9XWO57naK5mZvSmPGZ8ll7R16IcXE-NW_QryOkW8TOiTEaoJ3xVVqkx2aq3sy-cfFAbqvJAfxee9PZXyfzTSMzuvFhQI-MZGiyuHqAaCgK4Xh4Ssb7kdC_W7I_FvG4H5p3HA9BmiB3jMQiSmZ0JBbhuHa615XDiS1F2DE">
+</div>
+<!-- Photo 2 -->
+<div class="aspect-square bg-surface-container border border-outline-variant p-1">
+<img alt="Interior 2" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlOszROLvkLx63CM-0vUXFg6ffulzFAdu_Muubw3Yk8VcCkYwSAvsCUHU1HQ5mSZctVN8lyJ3OKCWmugdCErpv1VRbLg_qQ7PI4_m_fryhwg9tb0HPKX0WzUsXrQb-T4VluSU9_V_k2bAt6F67oYHwmgy4neAi__ueDbYyijl-yl6Dpa3G5qQpdh9A0qDGnjY97Zw2ZSG5w9vDPrP-genAP8rU_s5IfMlKzaJ-FF6E7x9gIjbs5LVe1lYs0OyZxZI8tn3XipSZXfs">
+</div>
+<!-- Photo 3 -->
+<div class="aspect-square bg-surface-container border border-outline-variant p-1">
+<img alt="Interior 3" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBueBhGMuji4b0y_3u9dPVEQeZZHdt1TmF4Xbk8mo7ZvONcODHnNYM6lyOLsxND22XtUxZax02Ds7GXWUWrIXA2DW-PryCBww5kSHRJrphZ8BHEeR7n-TYNLFYKtofi-I7d8OQ83qNfyNkK03jJxjLpZ7PdTUwpYxpvnCVsYbHAwgdrcVs2J_lLtOACrFbDAU19rL-WRZPUBRYiQq-zWIXZJ7ijv5K37ldThx1CUVEFAt8WnXltwt4SoYlAtVoe9ZlX3pYP9em06EQ">
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest border-t-2 border-dashed border-outline-variant shrink-0">
+<div class="flex flex-col md:flex-row justify-between items-center gap-gutter px-margin-desktop py-12 w-full max-w-max-width mx-auto">
+<div class="flex flex-col gap-2">
+<a href="{{DATA:SCREEN:SCREEN_41}}" class="font-label-chalk text-headline-md text-on-surface">Warkop Rakyat</a>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Warkop Rakyat - Kopi, Game, &amp; Kebersamaan</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline transition-opacity opacity-80 hover:opacity-100" href="#">Hubungi via WhatsApp</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline transition-opacity opacity-80 hover:opacity-100" href="{{DATA:SCREEN:SCREEN_28}}">Alamat Kami</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline transition-opacity opacity-80 hover:opacity-100" href="#">Kebijakan Privasi</a>
+</div>
+</div>
+</footer>
+
+
+</body></html>

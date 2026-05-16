@@ -1,6 +1,50 @@
 @import "tailwindcss";
 
 @theme inline {
+  /* Font Families */
+  --font-display: "Montserrat", sans-serif;
+  --font-body-lg: "Montserrat", sans-serif;
+  --font-body-md: "Montserrat", sans-serif;
+  --font-headline-lg: "Montserrat", sans-serif;
+  --font-headline-md: "Montserrat", sans-serif;
+  --font-headline-lg-mobile: "Montserrat", sans-serif;
+  --font-label-chalk: "Bricolage Grotesque", sans-serif;
+  --font-label-sm: "Montserrat", sans-serif;
+
+  /* Font Sizes (text-*) */
+  --text-display: 48px;
+  --text-display--line-height: 56px;
+  --text-display--letter-spacing: -0.02em;
+  --text-display--font-weight: 800;
+  --text-headline-lg: 32px;
+  --text-headline-lg--line-height: 40px;
+  --text-headline-lg--font-weight: 700;
+  --text-headline-lg-mobile: 28px;
+  --text-headline-lg-mobile--line-height: 36px;
+  --text-headline-lg-mobile--font-weight: 700;
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 32px;
+  --text-headline-md--font-weight: 600;
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 28px;
+  --text-body-lg--font-weight: 400;
+  --text-body-md: 16px;
+  --text-body-md--line-height: 24px;
+  --text-body-md--font-weight: 400;
+  --text-label-chalk: 18px;
+  --text-label-chalk--line-height: 20px;
+  --text-label-chalk--letter-spacing: 0.05em;
+  --text-label-chalk--font-weight: 500;
+  --text-label-sm: 12px;
+  --text-label-sm--line-height: 16px;
+  --text-label-sm--font-weight: 600;
+
+  /* Spacing */
+  --spacing-unit: 8px;
+  --spacing-margin-mobile: 16px;
+  --spacing-gutter: 16px;
+  --spacing-margin-desktop: 40px;
+  --spacing-max-width: 1200px;
   --color-primary: #81301d;
   --color-primary-container: #a04732;
   --color-primary-fixed: #ffdad2;
@@ -56,6 +100,52 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/* Taplak divider — gaming-hub */
+.taplak-divider {
+  background-image: radial-gradient(#dcc1bb 1px, transparent 0);
+  background-size: 8px 8px;
+  height: 4px;
+  width: 100%;
+  opacity: 0.3;
+}
+
+/* Wood texture — gaming-hub */
+.wood-texture {
+  background-color: #fdf9f4;
+  background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBOB8vKTgmtHZl1JANm3ARbRJ_8k7JcGs2L2CJfQpcR2lG2Of7mr-N2huF6PdQgHI4cTGgEfYDbKugiXn-vz_R86yQRy-aFn0uJiOUvLHYM0jXAmuOzap4_CJ67KvaUsUtqhtO1LbH24O_-2Ewa3D8h9x-4WPj5G5WiEMT8VxzZBIiKN0MARXD9lV9BMC-VhjV4bg_645720GBW5HdPDBI0EQ5HygeTB_UiA1elS6kJeFS589s-z8N0X6O_VPwU0OJ_bddsYljcR8k);
+}
+
+/* Letterpress inset — gaming-hub */
+.letterpress-inset {
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1), inset -1px -1px 2px rgba(255, 255, 255, 0.5);
+}
+
+/* Pressed button — gaming-hub */
+.pressed-button {
+  border-bottom: 2px solid #3d0600;
+}
+.pressed-button:active {
+  transform: translatey(2px);
+  border-bottom-width: 0;
+}
+
+/* Taplak pattern — radial dot pattern (Stitch) */
+.taplak-pattern {
+  background-image: radial-gradient(circle at 2px 2px, rgba(129, 48, 29, 0.05) 1px, transparent 0);
+  background-size: 8px 8px;
+}
+
+/* Chalk border — dashed (Stitch) */
+.chalk-border {
+  border-style: dashed;
+  border-width: 2px;
+}
+
+/* Letterpress (Stitch) */
+.letterpress {
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+}
+
 /* Chalkboard texture — dark with white grid lines */
 .chalkboard {
   background-color: #2c2c2c;
@@ -95,10 +185,6 @@ body {
 .inner-shadow-carved {
   box-shadow: inset 2px 2px 5px rgba(0,0,0,0.1), inset -1px -1px 2px rgba(255,255,255,0.5);
 }
-.letterpress {
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
-}
-
 /* Patrick Hand font helper */
 .font-patrick {
   font-family: "Patrick Hand", cursive;

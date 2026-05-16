@@ -1,0 +1,321 @@
+<!DOCTYPE html><html lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Bricolage+Grotesque:wght@500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#815a30",
+                    "on-tertiary-fixed-variant": "#623f18",
+                    "on-surface": "#1c1c19",
+                    "inverse-primary": "#ffb4a3",
+                    "tertiary-fixed-dim": "#f0bd8b",
+                    "surface": "#fdf9f4",
+                    "background": "#fdf9f4",
+                    "primary-fixed-dim": "#ffb4a3",
+                    "on-tertiary-container": "#ffd7b3",
+                    "error": "#ba1a1a",
+                    "surface-dim": "#ddd9d5",
+                    "on-primary-fixed-variant": "#7c2d1a",
+                    "surface-tint": "#9b432f",
+                    "primary-fixed": "#ffdad2",
+                    "surface-container": "#f1ede8",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed": "#291806",
+                    "outline": "#89726d",
+                    "surface-variant": "#e6e2dd",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#55423e",
+                    "surface-container-highest": "#e6e2dd",
+                    "secondary": "#725a42",
+                    "on-background": "#1c1c19",
+                    "surface-bright": "#fdf9f4",
+                    "secondary-fixed-dim": "#e1c1a4",
+                    "tertiary-fixed": "#ffdcbd",
+                    "primary": "#81301d",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f7f3ee",
+                    "on-primary-fixed": "#3d0600",
+                    "tertiary": "#66421b",
+                    "outline-variant": "#dcc1bb",
+                    "on-primary-container": "#ffd5cc",
+                    "secondary-container": "#fedcbe",
+                    "on-tertiary-fixed": "#2c1600",
+                    "surface-container-high": "#ebe8e3",
+                    "inverse-on-surface": "#f4f0eb",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "primary-container": "#a04732",
+                    "inverse-surface": "#31302d",
+                    "on-secondary-container": "#796048",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed-variant": "#59422c",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#fedcbe"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "16px",
+                    "margin-desktop": "40px",
+                    "margin-mobile": "16px",
+                    "unit": "8px",
+                    "max-width": "1200px"
+            },
+            "fontFamily": {
+                    "label-chalk": ["Bricolage Grotesque"],
+                    "headline-lg": ["Montserrat"],
+                    "headline-md": ["Montserrat"],
+                    "label-sm": ["Montserrat"],
+                    "headline-lg-mobile": ["Montserrat"],
+                    "body-lg": ["Montserrat"],
+                    "display": ["Montserrat"],
+                    "body-md": ["Montserrat"]
+            },
+            "fontSize": {
+                    "label-chalk": ["18px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>.taplak-divider {
+    background-image: radial-gradient(var(--tw-outline-variant) 1px, transparent 0);
+    background-size: 8px 8px;
+    height: 4px;
+    width: 100%;
+    opacity: 0.3
+    }
+.wood-texture {
+    background-color: #fdf9f4;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBOB8vKTgmtHZl1JANm3ARbRJ_8k7JcGs2L2CJfQpcR2lG2Of7mr-N2huF6PdQgHI4cTGgEfYDbKugiXn-vz_R86yQRy-aFn0uJiOUvLHYM0jXAmuOzap4_CJ67KvaUsUtqhtO1LbH24O_-2Ewa3D8h9x-4WPj5G5WiEMT8VxzZBIiKN0MARXD9lV9BMC-VhjV4bg_645720GBW5HdPDBI0EQ5HygeTB_UiA1elS6kJeFS589s-z8N0X6O_VPwU0OJ_bddsYljcR8k)
+    }
+.letterpress-inset {
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1), inset -1px -1px 2px rgba(255, 255, 255, 0.5)
+    }
+.pressed-button {
+    border-bottom: 2px solid #3d0600
+    }
+.pressed-button:active {
+    transform: translatey(2px);
+    border-bottom-width: 0
+    }</style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 border-b border-outline-variant bg-surface-bright dark:bg-surface-dim">
+<div class="flex justify-between items-center px-margin-desktop py-4 w-full max-w-max-width mx-auto">
+<a href="{{DATA:SCREEN:SCREEN_41}}" class="font-label-chalk text-headline-md text-primary dark:text-primary-fixed">Warkop Rakyat</a>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-chalk text-label-chalk" href="{{DATA:SCREEN:SCREEN_34}}">Menu</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-chalk text-label-chalk" href="{{DATA:SCREEN:SCREEN_37}}">Bundles</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-chalk text-label-chalk" href="{{DATA:SCREEN:SCREEN_9}}">Gaming Hub</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-chalk text-label-chalk" href="{{DATA:SCREEN:SCREEN_28}}">Location</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-bold scale-95 active:scale-90 transition-transform pressed-button">Pesan Sekarang</button>
+</div>
+</header>
+<main class="pt-24 pb-12">
+<!-- Hero Section: The PlayBox -->
+<section class="max-w-max-width mx-auto px-margin-desktop mb-16">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low border border-outline-variant flex flex-col md:flex-row items-center gap-8 p-8 md:p-12">
+<div class="flex-1 space-y-6">
+<span class="inline-block px-3 py-1 bg-secondary-container text-on-secondary-container text-label-sm font-label-sm rounded-full">EDISI TERBATAS</span>
+<h1 class="font-display text-display text-primary leading-tight">PlayBox Portable Console</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Nikmati sensasi gaming konsol premium di tengah kehangatan warkop. PlayBox menghadirkan pengalaman PlayStation 5 dalam koper kayu estetik yang merakyat.</p>
+<div class="flex flex-wrap gap-4 pt-4">
+<a href="{{DATA:SCREEN:SCREEN_28}}" class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold text-lg pressed-button flex items-center justify-center gap-2">
+                            <span class="material-symbols-outlined" data-icon="sports_esports">sports_esports</span>
+                            Pesan Tempat
+                        </a>
+<button class="border-2 border-primary text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary-container hover:text-on-primary-container transition-all">
+                            Lihat Menu Kopi
+                        </button>
+</div>
+</div>
+<div class="flex-1 relative">
+<img alt="PlayBox Hardware" class="w-full h-auto rounded-xl shadow-lg border border-outline-variant" data-alt="A high-end portable gaming suitcase featuring a sleek wood and metal exterior, open to reveal a built-in 24-inch monitor and a PlayStation 5 console inside. The suitcase sits on a rustic wooden table in a cozy, warm-lit coffee shop setting. The lighting is soft and golden, highlighting the earthy textures of the coffee house. The aesthetic is communal and grounded, blending modern technology with traditional Indonesian warkop vibes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs_TVyaqIz9a12jNyBmhBz5vLTWpd7Xj0vOEf_768SAzS_tLUCMxEfAlu6S8_wdEdNiTXQIlQsjrRV30LKkwKWh_TAglpD3v5wmaw0yUpLuQDv-wrNtiQVxl_3EwGL2r1DK1dz-KUiI_QZPiE3cztRFaQzVpZdQ0pl6J-ZrKsKkTwuIYcgobBobnwTvvgusycaBIt7LKxtoJtMzhceqw7TgvdSct4RIs7Z5E5QbW026PuGDR7DE_lcQxp2oCEd3SoAKACQTHWftmo">
+</div>
+</div>
+</section>
+<div class="taplak-divider mb-16"></div>
+<!-- PlayBox Anatomy: Bento Grid -->
+<section class="max-w-max-width mx-auto px-margin-desktop mb-16">
+<h2 class="font-headline-lg text-headline-lg text-center mb-12">PlayBox Anatomy</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<!-- Feature 1: Monitor -->
+<div class="md:col-span-2 bg-surface-container-high p-8 rounded-xl border border-dashed border-outline-variant relative overflow-hidden group">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-4xl text-primary mb-4" data-icon="monitor">monitor</span>
+<h3 class="font-headline-md text-headline-md mb-2">24" Full HD Display</h3>
+<p class="text-on-surface-variant">Layar IPS ultra-responsif dengan akurasi warna tinggi untuk pengalaman visual gaming yang jernih di setiap sudut warkop.</p>
+</div>
+<div class="absolute -right-4 -bottom-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[160px]" data-icon="aspect_ratio">aspect_ratio</span>
+</div>
+</div>
+<!-- Feature 2: Performance -->
+<div class="bg-surface-container p-8 rounded-xl border border-outline-variant flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-3xl text-primary mb-4" data-icon="memory">memory</span>
+<h3 class="font-label-chalk text-label-chalk mb-2">PS5 Powered</h3>
+</div>
+<p class="text-label-sm font-label-sm">Performa generasi terbaru dengan loading cepat SSD.</p>
+</div>
+<!-- Feature 3: Controllers -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border-2 border-primary flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-3xl text-primary mb-4" data-icon="videogame_asset">videogame_asset</span>
+<h3 class="font-label-chalk text-label-chalk mb-2">Dual DualSense</h3>
+</div>
+<p class="text-label-sm font-label-sm">Dua kontroler haptic feedback untuk duel seru bersama teman.</p>
+</div>
+<!-- Feature 4: Audio -->
+<div class="md:col-span-2 bg-surface-container-high p-8 rounded-xl border border-outline-variant flex items-center gap-6">
+<div class="p-6 bg-surface rounded-full border border-outline-variant letterpress-inset">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="surround_sound">surround_sound</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">Immersive Audio</h3>
+<p class="text-on-surface-variant">Speaker stereo terintegrasi dengan output headphone jack untuk fokus maksimal saat bertanding.</p>
+</div>
+</div>
+<!-- Feature 5: Portability -->
+<div class="md:col-span-2 bg-tertiary-container text-on-tertiary-container p-8 rounded-xl border border-outline-variant flex flex-col justify-center">
+<h3 class="font-headline-md text-headline-md mb-2">All-in-One Suitcase</h3>
+<p class="font-body-md text-body-md opacity-90">Didesain dalam koper yang kokoh dan mudah dipindahkan. Cukup colok kabel power, dan 'Warkop Gaming' siap dimulai di meja mana saja.</p>
+</div>
+</div>
+</section>
+<div class="taplak-divider mb-16"></div>
+<!-- Game Library Section -->
+<section class="max-w-max-width mx-auto px-margin-desktop mb-16">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Game Library</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Koleksi judul terpopuler yang siap kamu mainkan.</p>
+</div>
+<button class="text-primary font-bold hover:underline flex items-center gap-2">
+                    Lihat Semua
+                    <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Game 1 -->
+<div class="bg-surface-container-low rounded-xl border border-outline-variant overflow-hidden group">
+<div class="h-48 overflow-hidden">
+<img alt="FC 24" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A cinematic action shot of a soccer player during a high-stakes match, capturing the intensity and motion of FC 24. The visual style is modern and dynamic, with realistic lighting that emphasizes the athleticism of the characters. The color palette is vibrant, set against the warm, earthy backdrop of a traditional warkop aesthetic to maintain brand consistency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmPVGC66lG9O0jAq1D6DnpOpUBEdcAz0PiP2vyRrjVSpjOrUBQ2ByFNL5DWy2CurcFKeEHzLue9SgmptWTnEwZLsQ5x3-JhC2SiVLzGd3j4JdIQ9hzL36n3awvSOlmQC5R3AD3lTGQIe2fDmjWOUQb_EmS62Bh1r8TNwerBx6kDg38nHCwNSvbhzS6D-DQXudY90VZ-I3459KxgssjItdH8NlH1z-Rpl2Z8mHJCMSJVbLnuPMAqi3PlF0LkKVtwHsQ444hqJyxu_Y">
+</div>
+<div class="p-4 border-t border-dashed border-outline-variant">
+<h4 class="font-label-chalk text-label-chalk">FC 24</h4>
+<p class="text-label-sm font-label-sm text-on-surface-variant mb-4">Simulasi Sepakbola Terbaik</p>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 bg-secondary text-on-secondary text-[10px] rounded uppercase font-bold">Terlaris</span>
+</div>
+</div>
+</div>
+<!-- Game 2 -->
+<div class="bg-surface-container-low rounded-xl border border-outline-variant overflow-hidden group">
+<div class="h-48 overflow-hidden">
+<img alt="Tekken 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A dramatic high-contrast image showing two martial artists in a dynamic fighting stance, inspired by Tekken 8. The scene is filled with energy, featuring glowing particle effects that suggest a powerful strike. The lighting is low-key with warm terracotta accents, echoing the rustic minimalism of the warkop brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwS6hecGwCgTTGCLJgp-OnkBJBu7mpwwgMGWvsNP0OXOsjEzhRz--4PBINJ_xtwWTYJfn8g_4gl7Uwl9oBBTomhG-a9u42dTKJyd-3rDmIcmne-XRG7oUVetyyWWqOMtFp9vttb8ODGtMM6lrqF0NNsUTwVDpcnOZ4Gl0emzvHa7f6bKtPxiXOVJSuiGnOCKYSZaVcrhXae6Sd2OiNCnx0mE1RIUhAy-WKzJA9Wirg5C0X-RBKbrjx26iCmBh-Q-C4bas1-pm5UbU">
+</div>
+<div class="p-4 border-t border-dashed border-outline-variant">
+<h4 class="font-label-chalk text-label-chalk">Tekken 8</h4>
+<p class="text-label-sm font-label-sm text-on-surface-variant mb-4">Duel Beladiri Legendaris</p>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 bg-tertiary text-on-tertiary text-[10px] rounded uppercase font-bold">Baru</span>
+</div>
+</div>
+</div>
+<!-- Game 3 -->
+<div class="bg-surface-container-low rounded-xl border border-outline-variant overflow-hidden group">
+<div class="h-48 overflow-hidden">
+<img alt="RPG Quest" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A breathtaking open-world landscape featuring sprawling green hills and a majestic castle in the distance. The lighting is cinematic, capturing a golden hour glow that suggests adventure and exploration. The overall style is lush and detailed, perfectly embodying an epic fantasy RPG game suitable for the GameBrew gaming hub." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVMTcXzaO3PwXBcxbmnWHhBPt8DDJB7pE9ym33AEcPlu1i5i1w4SVi7rypBlPOtWSVnI2aZdTnLGjA6QGlzAvLlSSuARRPR7RpojizBu7EtTvxbjaCzWp2BcXXZqjEBSHo7H38scANtY35OfR3g_hDzOXePw9z811wu9_wxehhUOK4cz2QUoG6ICZyxe7KsjXB-UEUbywuf174nuq2FCcG-Tp0Cwb3x6xToSPa8nvxQai7tBlQTp8ITmpfPJgNL-EG7UWSAXwpZZ8">
+</div>
+<div class="p-4 border-t border-dashed border-outline-variant">
+<h4 class="font-label-chalk text-label-chalk">Elden Ring</h4>
+<p class="text-label-sm font-label-sm text-on-surface-variant mb-4">Petualangan Epik</p>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 bg-outline text-on-surface text-[10px] rounded uppercase font-bold">Hardcore</span>
+</div>
+</div>
+</div>
+<!-- Game 4 -->
+<div class="bg-surface-container-low rounded-xl border border-outline-variant overflow-hidden group">
+<div class="h-48 overflow-hidden">
+<img alt="Racing Turbo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A stylized, colorful racing scene with high-speed cars drifting around a neon-lit urban curve. The visual style is vibrant and high-energy, with motion blur effects that emphasize speed. The palette includes warm oranges and deep browns to align with the rustic minimalism theme of the Warkop Rakyat coffee house." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaErca5bKnTyG_yO-d15GjvYOROc9LB80V5SBsIqyRqfQh2w0yT5K3qYJbHkU7ephgtApiwJX39_PWkVQ9JiuZ6K9u_UeyAfKEYezKhN5rHjExJDKsj7--Nt18GVsK0UmsVjnejvOLLWO62viCn3F5BaPLmop3mSJIYqxvfcG2PdQ1AWV3v7X-m5wz1kXMsvyL57uZlhVfgPrV53AleYTFCLwiBAJ-C36OKYKQXWpCgSFIhExswpFYBKG8WEXAKdSztPApj2A7hVA">
+</div>
+<div class="p-4 border-t border-dashed border-outline-variant">
+<h4 class="font-label-chalk text-label-chalk">Gran Turismo 7</h4>
+<p class="text-label-sm font-label-sm text-on-surface-variant mb-4">Balap Mobil Realistis</p>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 bg-primary text-on-primary text-[10px] rounded uppercase font-bold">Simulator</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Availability / CTA -->
+<section class="max-w-max-width mx-auto px-margin-desktop mb-16">
+<div class="bg-surface-container-highest rounded-2xl p-12 border-2 border-dashed border-outline text-center space-y-6 wood-texture">
+<h2 class="font-display text-headline-lg text-on-surface">Siap Bertanding Hari Ini?</h2>
+<p class="max-w-2xl mx-auto font-body-lg text-on-surface-variant">Reservasi PlayBox sekarang untuk memastikan tempatmu dan teman-teman tidak terisi. Tersedia paket khusus kopi + gaming mulai dari Rp 15.000/jam.</p>
+<div class="flex justify-center gap-4">
+<div class="letterpress-inset bg-surface rounded-xl p-4 border border-outline-variant">
+<span class="block text-label-sm text-on-surface-variant font-bold">STATUS SAAT INI</span>
+<div class="flex items-center justify-center gap-2 text-primary font-bold">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+</span>
+                            3 PlayBox Tersedia
+                        </div>
+</div>
+</div>
+<div class="pt-4">
+<a href="{{DATA:SCREEN:SCREEN_28}}" class="inline-block bg-primary text-on-primary px-12 py-5 rounded-xl font-bold text-xl pressed-button shadow-lg">
+                        Cek Ketersediaan &amp; Pesan
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="border-t-2 border-dashed border-outline-variant bg-surface-container-highest dark:bg-inverse-surface">
+<div class="flex flex-col md:flex-row justify-between items-center gap-gutter px-margin-desktop py-margin-desktop w-full max-w-max-width mx-auto">
+<a href="{{DATA:SCREEN:SCREEN_41}}" class="font-label-chalk text-headline-md text-on-surface dark:text-inverse-on-surface">Warkop Rakyat</a>
+<div class="text-center md:text-left space-y-2">
+<p class="font-body-md text-body-md text-on-surface dark:text-inverse-on-surface">© 2024 Warkop Rakyat - Kopi, Game, &amp; Kebersamaan</p>
+<div class="flex flex-wrap justify-center md:justify-start gap-6">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed underline opacity-80 hover:opacity-100 transition-opacity" href="#">Hubungi via WhatsApp</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed underline opacity-80 hover:opacity-100 transition-opacity" href="{{DATA:SCREEN:SCREEN_28}}">Alamat Kami</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed underline opacity-80 hover:opacity-100 transition-opacity" href="#">Kebijakan Privasi</a>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-2xl text-on-surface-variant" data-icon="coffee">coffee</span>
+<span class="material-symbols-outlined text-2xl text-on-surface-variant" data-icon="sports_esports">sports_esports</span>
+<span class="material-symbols-outlined text-2xl text-on-surface-variant" data-icon="groups">groups</span>
+</div>
+</div>
+</footer>
+
+
+</body></html>
