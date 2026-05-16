@@ -63,7 +63,7 @@ export default function LokasiPage() {
                 DKI Jakarta, 12345
               </p>
               <a
-                href="https://wa.me/628123456789"
+                href="#"
                 className="w-full bg-tertiary text-on-tertiary py-4 flex items-center justify-center gap-2 font-label-chalk text-label-chalk hover:opacity-90 transition-opacity border-b-2 border-tertiary-container active:border-b-0 active:translate-y-[2px]"
               >
                 <span className="material-symbols-outlined">chat</span>
