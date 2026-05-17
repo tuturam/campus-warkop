@@ -116,12 +116,12 @@ export default function WarungMenuPage() {
       </footer>
 
       {/* FAB for Quick Order */}
-      <div className="fixed bottom-margin-mobile right-margin-mobile md:bottom-margin-desktop md:right-margin-desktop flex flex-col items-center gap-2 group z-50">
+      {/*<div className="fixed bottom-margin-mobile right-margin-mobile md:bottom-margin-desktop md:right-margin-desktop flex flex-col items-center gap-2 group z-50">
         <div className="bg-primary-container text-on-primary-container p-4 rounded-full shadow-2xl scale-100 hover:scale-110 active:scale-95 transition-transform cursor-pointer">
           <span className="material-symbols-outlined text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>shopping_basket</span>
         </div>
         <span className="bg-surface-bright border border-outline-variant px-3 py-1 rounded text-label-sm font-label-chalk opacity-0 group-hover:opacity-100 transition-opacity">Checkout</span>
-      </div>
+      </div>*/}
     </>
   );
 }
